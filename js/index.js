@@ -45,3 +45,25 @@ function hienThiThongTin() {
   var tagSpanKetQua = document.getElementById("ketQuaHienThi");
   tagSpanKetQua.innerHTML = output;
 }
+
+// Ví dụ 2: Nhập vào số tiền lương(1h) và số giờ làm In ra tổng lương bằng số giờ nhận tiền lương
+
+function tinhTongLuong() {
+  // alert(123);
+  // Input: tienLuong1h:number , soGioLam:number
+  var tienLuong = document.getElementById("tienLuong1h").value;
+  var soGioLam = document.getElementById("soGioLam").value;
+
+  // Kiểm tra Input
+  // console.log("Tiền lương:", tienLuong);
+  // console.log("Số giờ làm:", soGioLam);
+
+  // Output: tongLuong: number
+  var tongLuong = 0;
+
+  // Progress:
+  tongLuong = tienLuong * soGioLam;
+
+  // .toLocaleString() giúp ngăn giữa các số vd: 50,000
+  document.getElementById("tongLuong").innerHTML = tongLuong.toLocaleString();
+}

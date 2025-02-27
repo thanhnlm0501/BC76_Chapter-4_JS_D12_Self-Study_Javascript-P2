@@ -27,21 +27,48 @@
     <br />
     <div class="w-25">
       <img class="w-100" id="hinhanh" src="./img/Hinh1.jpg" alt="" />
-
+    </div>
+    <div class="w-50">
       <!-- Sự kiện onclick dùng để gọi hàm từ js -->
-      <button onclick="sayHello()" class="btn btn-success mt-3">
+      <button onclick="sayHello()" class="btn btn-success my-4">
         Say Hello
       </button>
-      <hr />
+
       <div class="form-group">
-        <p>Ví dụ 1: Nhập 1 giá trị và in ra giá trị tại kết quả</p>
+        <h4>Ví dụ 1: Nhập 1 giá trị và in ra giá trị tại kết quả</h4>
         <input id="giaTriNhap" class="form-control" />
         <br />
         <button onclick="hienThiThongTin()" class="btn btn-success">
           Hiển Thị
         </button>
         <div class="mt-2 text-success">
-          <p>Kết quả: <span id="ketQuaHienThi"></span></p>
+          <p>Kết quả: <span id="ketQuaHienThi" class="text-danger"></span></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <h4>
+          Ví dụ 2: Nhập vào số tiền lương(1h) và số giờ làm In ra tổng lương
+          bằng số giờ nhận tiền lương
+        </h4>
+        <div class="form-group">
+          <p>Tiền lương 1h</p>
+          <input id="tienLuong1h" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Số giờ làm</p>
+          <input id="soGioLam" class="form-control" />
+        </div>
+        <br />
+        <button
+          onclick="tinhTongLuong()"
+          id="btnTinhTien"
+          class="btn btn-success"
+        >
+          Tính tiền
+        </button>
+        <div class="mt-2 alert alert-success">
+          <p>Kết quả: <span id="tongLuong"></span></p>
         </div>
       </div>
     </div>

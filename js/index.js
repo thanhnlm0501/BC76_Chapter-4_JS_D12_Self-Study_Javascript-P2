@@ -22,3 +22,6 @@ tagImg.src = "./../img/Hinh2.jpg";
 function sayHello() {
   alert("Chào mọi người !");
 }
+
+// Lệnh gọi hàm
+//sayHello()

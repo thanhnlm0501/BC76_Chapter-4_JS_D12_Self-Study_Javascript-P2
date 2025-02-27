@@ -16,3 +16,9 @@ console.log(tagInputNumber.value);
 // .src: là nội dung hình ảnh của thẻ img
 var tagImg = document.getElementById("hinhanh");
 tagImg.src = "./../img/Hinh2.jpg";
+
+// ----- Hàm (function) -----
+// Định nghĩa hàm: Dùng để thực thi 1 loạt hành động sau khi thực hiện khai báo
+function sayHello() {
+  alert("Chào mọi người !");
+}

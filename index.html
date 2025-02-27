@@ -18,7 +18,7 @@
     />
   </head>
 
-  <body class="container">
+  <body class="container" style="margin-bottom: 500px">
     <h3 id="title">Cybersoft</h3>
     <br />
     <input id="txt" class="form-control w-25" value="123" />
@@ -27,10 +27,24 @@
     <br />
     <div class="w-25">
       <img class="w-100" id="hinhanh" src="./img/Hinh1.jpg" alt="" />
+
+      <!-- Sự kiện onclick dùng để gọi hàm từ js -->
+      <button onclick="sayHello()" class="btn btn-success mt-3">
+        Say Hello
+      </button>
+      <hr />
+      <div class="form-group">
+        <p>Ví dụ: Nhập 1 giá trị và in ra giá trị tại kết quả</p>
+        <input id="giaTriNhap" class="form-control" />
+        <br />
+        <button onclick="hienThiThongTin()" class="btn btn-success">
+          Hiển Thị
+        </button>
+        <div class="mt-2 text-success">
+          <p>Kết quả: <span id="ketQuaHienThi"></span></p>
+        </div>
+      </div>
     </div>
-    <br />
-    <!-- Sự kiện onclick dùng để gọi hàm từ js -->
-    <button onclick="sayHello()" class="btn btn-success">Say Hello</button>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

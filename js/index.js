@@ -25,3 +25,23 @@ function sayHello() {
 
 // Lệnh gọi hàm
 //sayHello()
+
+// Ví dụ 1: Viết chương trình yêu cầu người dùng nhập vào 1 giá trị và khi người dùng bấm hiển thị thì giá trị sẽ in ra tại span#ketQuaHienThi
+
+// handleEvent: Xử lý sự kiện
+function hienThiThongTin() {
+  // Lấy giá trị nhập khi gọi hàm hiển thị thông tin
+  // Input: luôn là string
+  var input = document.getElementById("giaTriNhap");
+  console.log(input.value);
+
+  // Output: string
+  var output = "";
+
+  // Progress:
+  output = input.value;
+
+  // Xử lý kết quả hiển thị lên giao diện
+  var tagSpanKetQua = document.getElementById("ketQuaHienThi");
+  tagSpanKetQua.innerHTML = output;
+}

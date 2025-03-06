@@ -67,3 +67,39 @@ function tinhTongLuong() {
   // .toLocaleString() giúp ngăn giữa các số vd: 50,000
   document.getElementById("tongLuong").innerHTML = tongLuong.toLocaleString();
 }
+
+// Ví dụ 3: Xây dựng form thông báo đăng nhập
+
+// function xuLyDangNhap() {}
+
+var btnDangNhap = document.getElementById("btnDangNhap");
+
+// C1: Gọi function
+// Thường sử dụng khi function cần tái sử dụng
+// btnDangNhap.onclick = xuLyDangNhap;
+
+// C2: Anonymous function
+btnDangNhap.onclick = function () {
+  // anonymous function
+  // Input: taiKhoan: string, matKhau: string
+  var taiKhoan = document.getElementById("taiKhoan").value;
+  var matKhau = document.getElementById("matKhau").value;
+
+  // Output: thongBao: string
+  var thongBao = "";
+
+  // Progress
+  thongBao = "Tài khoản: " + taiKhoan + " - Mật khẩu: " + matKhau;
+  // alt + z hoặc option + z => Xuống dòng
+
+  var tagKetQua = document.getElementById("ketQuaDangNhap");
+
+  tagKetQua.innerHTML = thongBao;
+  // Thay đổi về style của thẻ
+  // tagKetQua.style.backgroundColor = "green";
+  // tagKetQua.style.padding = "15px";
+  // tagKetQua.style.color = "#fff";
+  // tagKetQua.style.margin = "15px";
+
+  tagKetQua.className = "bg-success p-2 m-2 text-white";
+};

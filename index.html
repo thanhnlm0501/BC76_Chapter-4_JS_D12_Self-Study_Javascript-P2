@@ -109,6 +109,55 @@
         </div>
       </div>
       <br />
+      <h4>Ví dụ 4: Tính tiền tip</h4>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div
+            class="card-header"
+            style="background-color: brown; color: white; text-align: center"
+          >
+            TÍNH TIỀN TIP
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Tổng tiền thanh toán</label>
+              <br />
+              <input
+                type="text"
+                name=""
+                id="tongTienThanhToan"
+                class="form-control"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label>Bạn muốn tip bao nhiêu?</label>
+              <br />
+              <select name="" id="phanTramTip" class="form-control">
+                <option value="30">30% - Tuyệt</option>
+                <option value="20">20% - Tốt</option>
+                <option value="15">15% - Tạm ổn</option>
+                <option value="10">10% - Tồi</option>
+                <option value="5">5% - Thật tệ</option>
+              </select>
+            </div>
+            <br />
+            <div class="form-group">
+              <label>Số người tip</label>
+              <br />
+              <input type="text" name="" id="soNguoiTip" class="form-control" />
+            </div>
+          </div>
+          <br />
+          <div class="card-footer text-center">
+            <button class="btn btn-danger" id="btnTinhTienTip">TÍNH NÀO</button>
+            <br />
+            <span>Số tiền tip trên người</span>
+            <br />
+            <span id="tienTipTrenNguoi" class="display-4">10$</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script

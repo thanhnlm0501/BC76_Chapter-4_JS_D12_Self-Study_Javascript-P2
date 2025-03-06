@@ -103,3 +103,36 @@ btnDangNhap.onclick = function () {
 
   tagKetQua.className = "bg-success p-2 m-2 text-white";
 };
+
+// Ví dụ 4: Tính tiền tip
+document.getElementById("btnTinhTienTip").onclick = function () {
+  /* 
+    Input:
+      + tongTienThanhToan: number
+      + phanTramTip: number
+      + soNguoiTip: number
+  
+    Progress:
+      + Lấy thông tin người dùng nhập từ giao diện
+      + Sử dụng công thức tính phần trăm tip quy ra tiền và chia cho số người
+    Output
+      + tienTipTrenNguoi: number
+  */
+
+  // Input
+  var tongTienThanhToan = document.getElementById("tongTienThanhToan").value;
+  var phanTramTip = document.getElementById("phanTramTip").value;
+  var soNguoiTip = document.getElementById("soNguoiTip").value;
+
+  // console.log(tongTienThanhToan);
+  // console.log(phanTramTip);
+  // console.log(soNguoiTip);
+
+  // Output
+  var tienTipTrenNguoi = 0;
+
+  tienTipTrenNguoi = (tongTienThanhToan * phanTramTip) / 100 / soNguoiTip;
+
+  document.getElementById("tienTipTrenNguoi").innerHTML =
+    tienTipTrenNguoi + "$";
+};
